@@ -1,3 +1,5 @@
+import { skeleton } from "@skeletonlabs/skeleton/plugin";
+import { cerberus } from "@skeletonlabs/skeleton/themes";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -18,6 +20,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [skeleton({ themes: [cerberus] })],
 };
 export default config;
